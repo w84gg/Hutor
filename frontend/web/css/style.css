@@ -1,0 +1,41 @@
+#main_container {
+    width: 100%;
+    min-height: 800px;
+    background-color: rgba(255, 255, 255, 0.83);
+    border: 1px solid rgba(12, 60, 96, 1);
+    padding: 20px 20px 20px 20px;
+
+}
+
+#wrap-left {
+    float: left;
+    width: 60%
+}
+
+#wrap-right {
+    float: right;
+}
+
+#about {
+    font-size:18px;
+    font-family: 'PT Sans', sans-serif;
+}
+#welcome {
+    font-size:22px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: Bold;
+    color: #937ff5;
+    line-height: 40px;
+}
+#points {
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: blue;
+}
+#main_photo {
+    float:right;
+}
+.clear {
+    clear: both;
+}
