@@ -12,11 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'room_number')->textInput() ?>
+    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'pos_number')->textInput() ?>
-
-    <?= $form->field($model, 'av_from')->textInput() ?>
+    <?= $form->field($model, 'bed_type')->textInput() ?>
 
     <?= $form->field($model, 'price_day')->textInput(['maxlength' => true]) ?>
 

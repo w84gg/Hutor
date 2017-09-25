@@ -80,6 +80,13 @@ class RoomsController extends Controller
      * @param integer $id
      * @return mixed
      */
+
+    public static function getAllRooms()
+    {
+        $arr = Rooms::find()->all();
+        return $arr;
+    }
+
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);

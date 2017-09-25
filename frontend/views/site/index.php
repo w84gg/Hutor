@@ -33,10 +33,11 @@ $this->title = 'Хостел Хутор';
 </div>
 <div id="wrap-right">
     <div id="main_photo">
-        <img src="/images/entrance.jpg">
+        <img width="400px" src="/images/entrance.jpg">
     </div>
     <div id="reserve">
-        
+
     </div>
 </div>
+
 </div>

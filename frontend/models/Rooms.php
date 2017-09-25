@@ -8,9 +8,8 @@ use Yii;
  * This is the model class for table "rooms".
  *
  * @property integer $id
- * @property integer $room_number
- * @property integer $pos_number
- * @property string $av_from
+ * @property string $title
+ * @property integer $bed_type
  * @property string $price_day
  * @property string $description
  */
@@ -30,11 +29,11 @@ class Rooms extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['room_number', 'pos_number', 'av_from', 'price_day', 'description'], 'required'],
-            [['room_number', 'pos_number'], 'integer'],
-            [['av_from'], 'safe'],
+            [['title', 'bed_type', 'price_day', 'description'], 'required'],
+            [['bed_type'], 'integer'],
             [['price_day'], 'number'],
             [['description'], 'string'],
+            [['title'], 'string', 'max' => 255],
         ];
     }
 
@@ -45,11 +44,10 @@ class Rooms extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'room_number' => 'Room Number',
-            'pos_number' => 'Pos Number',
-            'av_from' => 'Av From',
-            'price_day' => 'Price Day',
-            'description' => 'Description',
+            'title' => 'Название',
+            'bed_type' => 'Тип номера',
+            'price_day' => 'Цена за сутки',
+            'description' => 'Описание',
         ];
     }
 }
